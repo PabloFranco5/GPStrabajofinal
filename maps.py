@@ -40,4 +40,18 @@ while True:
         print(f"informacion del viaje desde {origen.capitalize()} hasta {destino.capitalize()}:")
         print(f"La duracion de su trayecto en coche fue: {duracion_del_viaje}.")
         print("La distancia aproximada del viaje fue de:  " + str("{:.2f}".format(distancia) + "km."))
-        prin("Usaste :  " + str("{:.2f}".format(gasolina_usada) + "litros de gasolina en tu viaje."))
+        print("Usaste :  " + str("{:.2f}".format(gasolina_usada) + "litros de gasolina en tu viaje."))
+        
+        print("============================================================")
+        print("Indicaciones del trayecto")
+
+        for each in json_data["route"]["legs"][0]["maneuvers"]:
+            print(each["narrative"])
+
+
+
+
+
+
+
+
