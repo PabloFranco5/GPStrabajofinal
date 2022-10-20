@@ -1,0 +1,32 @@
+PALABRAS CLAVES
+
+- endpoint - url o direccion que usamos para encontrar un sitio web la cual 
+usa el protocolo http/s
+
+A TENER EN CUENTA: 
+
+la Api direction de Mapquest tiene mucha informacion acerca de direcciones
+ de diferentes lugares en el mundo 
+
+La idea del programa es poner dos puntos, un punto origen y un punto destino 
+y al poner esos puntos usaremos la APi para que nos de toda la informacion acerca
+de como vamos a ir del punto A al punto B
+
+Cosas importantes, usaremos primero que todo el metodo GET de la API donde destacamos la 
+URL http://www.mapquestapi.com/directions/v2/route que usaremos para comunicarnos con la
+API
+
+Vamos a usar dos librerias importantes a la hora de la creacion de esta aplicacion las 
+cuales son requests la cual nos ayudara a manipular las peticiones hacia cosas que tenga que ver con 
+el protocolo http/s o http y urllib nos permite "jugar" con las url.
+
+Un status code en 0 significa que se ejecuto la peticion de manera exitosa
+
+
+DESARROLLO:
+ 
+Lo que haremos a continuacion es crear una key (llave) es una serie de caracteres que 
+lo que va a hacer es autenticar la aplicacion que estamos desarrolando con la API (con esto le 
+decimos a MAPQUEST que esta es la aplicacion quer vamos a usar y nos autorice para usar los
+recursos de su pagina web y nos brinde sus datos)
+
