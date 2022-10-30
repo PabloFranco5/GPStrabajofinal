@@ -1,6 +1,6 @@
 # GPS Universidad de Antioquia
 
-![:scale 50%](https://i1.pnghost.com/1/21/3/pngdb-la-estrella-antioquia-university-of-ces-public-universidad-de-png-D6ubqJJp0STq66KwUGEkMUeNs_t.jpg)
+![:scale 50%](https://www.udea.edu.co/wps/wcm/connect/udea/ec2cedfa-9646-4397-9e09-ecc7548c996c/5/Logos%C3%ADmbolo-vertical.jpg?MOD=AJPERES)
 
 Este proyecto es el trabajo final del curso Programación para la industria.
 
