@@ -1,3 +1,7 @@
+# GPS Universidad de Antioquia
+
+![:scale 50%](https://i1.pnghost.com/1/21/3/pngdb-la-estrella-antioquia-university-of-ces-public-universidad-de-png-D6ubqJJp0STq66KwUGEkMUeNs_t.jpg)
+
 Este proyecto es el trabajo final del curso Programación para la industria.
 
 Integrantes: 
