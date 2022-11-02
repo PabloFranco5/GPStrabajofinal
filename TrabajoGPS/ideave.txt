@@ -1,0 +1,2 @@
+agregar velocidad promedio como:
+velocidad_promedio=distancia/duracion_del_viaje
