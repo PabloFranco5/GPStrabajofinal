@@ -5,6 +5,16 @@ usa el protocolo http/s
 
 A TENER EN CUENTA: 
 
+El desarrollo de la API de GPS pretende, en primera instancia, proporcionar datos de geolocalización, 
+previamente solicitados al proveedor de GPS (Mapquest), que faciliten la identificación de características 
+de interés acerca de rutas definidas por el usuario. Mediante la indicación de un punto de origen y un 
+punto de destino, la API extrae una serie de atributos en formato .json que permiten identificar la ruta 
+de acceso a las características de interés. La API de GPS facilitará al usuario información sobre la 
+duración del viaje, la distancia en kilómetros desde el punto de origen al punto de destino, la 
+velocidad promedio, la cantidad aproximada de litros de gasolina necesarios para realizar el recorrido, 
+y las indicaciones durante el recorrido.
+
+
 la Api direction de Mapquest tiene mucha informacion acerca de direcciones
  de diferentes lugares en el mundo 
 

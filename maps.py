@@ -36,11 +36,13 @@ while True:
         duracion_del_viaje = json_data["route"]["formattedTime"]
         distancia = json_data["route"]["distance"] * 1.61
         gasolina_usada = json_data["route"]["fuelUsed"] * 3.79
+        velocidad_promedio = distancia/duracion_del_viaje
         print("============================================================")
         print(f"informacion del viaje desde {origen.capitalize()} hasta {destino.capitalize()}:")
         print(f"La duracion de su trayecto en coche fue: {duracion_del_viaje}.")
         print("La distancia aproximada del viaje fue de:  " + str("{:.2f}".format(distancia) + "km."))
         print("Usaste :  " + str("{:.2f}".format(gasolina_usada) + "litros de gasolina en tu viaje."))
+        
         
         print("============================================================")
         print("Indicaciones del trayecto")
