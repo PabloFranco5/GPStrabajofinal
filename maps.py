@@ -30,19 +30,34 @@ while True:
     json_data = requests.get(url).json()
     statuscode = json_data["info"]["statuscode"] 
 
+#creamos el codigo para que se visualice el clima de la ciudad de origen y la de destino 
+def main():
+    urlclima = f"https://es.wttr.in/{origen}?format=j1"
+
+    responseclima = requests.get(url)
+    clima = responseclima.json()
+
+    temperatura_origen = clima["current_condition"][0]["temp_C"]
+    descripcion = clima["current_condition"][0]["lang_es"][0]["value"]
+    print(f"La temperatura actual de {origen} es de {temperatura_origen} °C. {descripcion}")
+
+if __name__ == "__main__":
+    main()
+
 #creamos un if para cuando sea exitosa la ejecucion y creamos variables de interes a resaltar del json   
 
     if statuscode == 0:
         duracion_del_viaje = json_data["route"]["formattedTime"]
         distancia = json_data["route"]["distance"] * 1.61
-        gasolina_usada = json_data["route"]["fuelUsed"] * 3.79
-        velocidad_promedio = distancia/duracion_del_viaje
+        #gasolina_usada = json_data["route"]["fuelUsed"] * 3.79
+        #velocidad_promedio = str(distancia/duracion_del_viaje)
         print("============================================================")
         print(f"informacion del viaje desde {origen.capitalize()} hasta {destino.capitalize()}:")
         print(f"La duracion de su trayecto en coche fue: {duracion_del_viaje}.")
         print("La distancia aproximada del viaje fue de:  " + str("{:.2f}".format(distancia) + "km."))
-        print("Usaste :  " + str("{:.2f}".format(gasolina_usada) + "litros de gasolina en tu viaje."))
-        
+        #print(f"la velocidad promedio fue de {velocidad_promedio} km/h.")
+        #print("Usaste :  " + str("{:.2f}".format(gasolina_usada) + "litros de gasolina en tu viaje."))
+        print(url)
         
         print("============================================================")
         print("Indicaciones del trayecto")
